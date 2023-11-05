@@ -1,7 +1,7 @@
 ## 02 CSS SANDBOX
 # CSS CheatSheet 02
 
-Welcome to **My Second CSS Cheat Sheet**! Thanks for stopping by.
+Welcome to **My Second CSS Cheat Sheet**! Consists of advance CSS concepts Thanks for stopping by.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -24,5 +24,4 @@ We welcome contributions! To contribute:
 5. Create a pull request.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
- 
+This project is licensed under the [MIT License](LICENSE). 
