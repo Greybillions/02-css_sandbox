@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Targerted Selectors</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+    /*Direct Child*/
+      div > p {
+        background: #ddd;
+    }
+
+    /*Directly After*/
+    div + p {
+    background: #333;
+    color: #fff;
+    }
+    
+    </style>
+  </head>
+  <body>
+  <div>
+    <p>Lorem ipsum dolor sit amet</p>
+      <ul>
+        <li>Item 1</li>
+        <li><p>Item 2</p></li>
+        <li>Item 3</li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+  </div>
+    <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+
+  </body>
+</html>
