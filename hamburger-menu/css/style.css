@@ -73,3 +73,17 @@ body {
   opacity: 0.9;
   color: var(--secondary-color);
 }
+
+/* For Mobile */
+@media(max-width: 768px) {
+
+  #showcase h1 {
+    font-size: 3rem;
+  }
+
+
+  #showcase p {
+    font-size: 1rem;
+}
+
+}
