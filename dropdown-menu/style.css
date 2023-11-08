@@ -1,0 +1,118 @@
+:root {
+  --primary-color: coral;
+  --secondary-color: chocolate;
+}
+
+/*Reset*/
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+/*Body Styling*/
+html, body {
+  font-family: 'Arial', Helvita, sans-serif;
+  background: #fff;
+}
+
+/*Removing Navbar Styling*/
+#navbar ul {
+  list-style: none;
+  background: teal;
+}
+
+/*Styling List Items and links*/
+#navbar ul li {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  padding: 1rem;
+  transition: all 0.4s ease;
+}
+
+#navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Hide Nested List by Default*/
+#navbar ul li ul {
+  display: none;
+}
+
+/*Hover Styling*/
+#navbar ul li:hover {
+  color: #fff;
+  background: var(--primary-color);
+  cursor: pointer;
+}
+
+#navbar ul li:hover a {
+  color: #fff;
+}
+
+/*Show Nested Dropdown + Hover styling*/
+#navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  margin-top: 1rem;
+}
+
+#navbar ul li:hover ul li {
+  display: block;
+  background: #e7e7e7;
+}
+
+#navbar ul li:hover ul li a {
+  color: #333; 
+}
+
+#navbar ul li:hover ul li:hover { 
+  color: inherit;
+  background: #e0e0e0;
+}
+
+#navbar ul li:hover ul li span {
+  float: right;
+  color: #fff;
+  background: var(--primary-color);
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+#navbar ul li:hover ul li:hover span {
+  background: var(--secondary-color);
+}
+
+/*Styling showcase*/
+#showcase {
+  display: flex;
+  display-direction: column;
+  height: 200px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  background: var(--primary-color);
+}
+
+#showcase h1 {
+  color: #fff;
+  font-size: 4rem:
+}
+
+@media screen and (max-width: 600px) {
+  #navbar ul li {
+    display: block;
+  }
+
+  #navbar ul li:hover ul {
+    width: 100%;
+    position: relative;
+  }
+}
