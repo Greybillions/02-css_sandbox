@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Poppins, sans-serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+main section {
+  flex: 1 1 33.3vw;
+  font-size: 2rem;
+  font-weight: 300;
+  display: grid;
+  place-items: center;
+  transition: flex-basis 0.8s ease-in;
+}
+
+#smartphone {
+  background-color: #ff5e5b;
+  color: #fff;
+}
+
+#tablet {
+  background-color: #ffed66;
+  color: #333;
+}
+
+#widescreen {
+  background-color: teal;
+  color: #fff;
+}
+
+p {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+
+/* For Smartphones */
+@media (max-width: 500px) {
+  main section {
+    flex-basis: 1rem;
+  }
+
+  #smartphone {
+    flex-basis: 60vw;
+  }
+
+  #smartphone p {
+    font-size: 2.5rem;
+  }
+
+  #tablet p, #widescreen p {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+  }
+}
+
+/* For Tablet */
+@media(min-width: 501px) and (max-width: 769px) {
+  main section {
+    flex-basis: 1rem;
+  }
+
+  #tablet {
+    flex-basis: 60vw;
+  }
+
+  #tablet p {
+    font-size: 5rem;
+  }
+
+  #smartphone p, #widescreen p {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+  }
+}
+
+/* For Widescreens (PC etc) */
+@media (min-width: 770px) {
+  main section {
+    flex-basis: 1rem;
+  }
+
+  #widescreen {
+    flex-basis: 60vw;
+  }
+
+  #widescreen p {
+    font-size: 7.5rem;
+  }
+
+  #smartphone p, #tablet p {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+  }
+}
